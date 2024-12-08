@@ -1,0 +1,17 @@
+@simulador_financeiro_HostAddress = http://localhost:5067
+
+POST {{simulador_financeiro_HostAddress}}/simulacao-investimentos
+Accept: application/json
+Content-Type: application/json
+
+{
+  "descricao": "teste",
+  "valorAplicado": 600000,
+  "valorAporteMensal": 0,
+  "periodoEmMeses": 1,
+  "taxaAnual": 10.65,
+  "taxaCdi": 0,
+  "taxaInvestimento": 0,
+  "TaxaIrFixa": true
+}
+###
